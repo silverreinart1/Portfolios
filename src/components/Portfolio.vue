@@ -37,4 +37,43 @@ const count = ref(0)
       </div>
     </div>
   </div>
+
+  <section class="bg-black text-white py-16"> 
+    <div class="flex justify-center space-x-10 mb-16">
+      <img src="logo1.png" alt="Logo 1" class="h-8" />
+      <img src="logo2.png" alt="Logo 2" class="h-8" />
+      <img src="logo3.png" alt="Logo 3" class="h-8" />
+      <img src="logo4.png" alt="Logo 4" class="h-8" />
+      <img src="logo5.png" alt="Logo 5" class="h-8" />
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="bg-beige p-8 text-center">
+        <h3 class="text-3xl font-bold mb-4">01</h3>
+        <h2 class="text-xl font-semibold mb-4">WEB DESIGN</h2>
+        <p class="mb-4">
+          Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.
+        </p>
+        <a href="#" class="text-black font-bold">ABOUT WEBDESIGN →</a>
+      </div>
+
+      <div class="bg-beige p-8 text-center">
+        <h3 class="text-3xl font-bold mb-4">02</h3>
+        <h2 class="text-xl font-semibold mb-4">DEVELOPMENT</h2>
+        <p class="mb-4">
+          Get custom web development solutions tailored to your specifications, designed to deliver a flawless user experience.
+        </p>
+        <a href="#" class="text-black font-bold">ABOUT WEBFLOW →</a>
+      </div>
+
+      <div class="bg-beige p-8 text-center">
+        <h3 class="text-3xl font-bold mb-4">03</h3>
+        <h2 class="text-xl font-semibold mb-4">CONTENT & SEO</h2>
+        <p class="mb-4">
+          Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.
+        </p>
+        <a href="#" class="text-black font-bold">ABOUT SEO →</a>
+      </div>
+    </div>
+  </section>
 </template>
