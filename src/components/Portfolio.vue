@@ -40,40 +40,158 @@ const count = ref(0)
 
   <section class="bg-black text-white py-16"> 
     <div class="flex justify-center space-x-10 mb-16">
-      <img src="logo1.png" alt="Logo 1" class="h-8" />
-      <img src="logo2.png" alt="Logo 2" class="h-8" />
-      <img src="logo3.png" alt="Logo 3" class="h-8" />
-      <img src="logo4.png" alt="Logo 4" class="h-8" />
-      <img src="logo5.png" alt="Logo 5" class="h-8" />
+      <img src="/img/logos.png" alt="Logo 1" class="h-8" />
+
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <div class="bg-beige p-8 text-center">
-        <h3 class="text-3xl font-bold mb-4">01</h3>
-        <h2 class="text-xl font-semibold mb-4">WEB DESIGN</h2>
-        <p class="mb-4">
-          Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.
-        </p>
-        <a href="#" class="text-black font-bold">ABOUT WEBDESIGN →</a>
+    <div class="flex justify-center items-center space-x-4 min-h-screen bg-black">
+    <div class="relative group w-80 h-64 bg-black rounded-lg shadow-lg p-8 border-2 border-yellow-600">
+      <h2 class="text-2xl text-yellow-500 group-hover:text-yellow-400 transition duration-300">01</h2>
+      <h3 class="text-xl font-semibold mt-2 text-yellow-500 group-hover:text-yellow-400 transition duration-300">WEB DESIGN</h3>
+      <p class="text-sm text-yellow-500 mt-4 group-hover:text-yellow-400 transition duration-300">
+        Visually stunning web designs that captivate your audience by blending your brand's voice and customer needs.
+      </p>
+      <a
+        href="#"
+        class=" bottom-4 text-yellow-500 group-hover:text-yellow-400 transition duration-300 flex items-center"
+      >
+        <span>ABOUT WEBDESIGN</span>
+        <svg class="ml-2 w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="relative group w-80 h-64 bg-black rounded-lg shadow-lg p-8 border-2 border-yellow-600">
+      <h2 class="text-2xl text-yellow-500 group-hover:text-yellow-400 transition duration-300">02</h2>
+      <h3 class="text-xl font-semibold mt-2 text-yellow-500 group-hover:text-yellow-400 transition duration-300">DEVELOPMENT</h3>
+      <p class="text-sm text-yellow-500 mt-4 group-hover:text-yellow-400 transition duration-300">
+        Get custom web development solutions tailored to your needs, designed for flawless user experience.
+      </p>
+      <a
+        href="#"
+        class=" bottom-4 text-yellow-500 group-hover:text-yellow-400 transition duration-300 flex items-center"
+      >
+        <span>ABOUT WEBFLOW</span>
+        <svg class="ml-2 w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="relative group w-80 h-64 bg-black rounded-lg shadow-lg p-8 border-2 border-yellow-600">
+      <h2 class="text-2xl text-yellow-500 group-hover:text-yellow-400 transition duration-300">03</h2>
+      <h3 class="text-xl font-semibold mt-2 text-yellow-500 group-hover:text-yellow-400 transition duration-300">CONTENT & SEO</h3>
+      <p class="text-sm text-yellow-500 mt-4 group-hover:text-yellow-400 transition duration-300">
+        Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.
+      </p>
+      <a
+        href="#"
+        class=" bottom-4 text-yellow-500 group-hover:text-yellow-400 transition duration-300 flex items-center"
+      >
+        <span>ABOUT SEO</span>
+        <svg class="ml-2 w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  </section>
+  <section class="">
+    <div class="min-h-screen bg-black text-yellow-500 py-16 px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-semibold tracking-widest">Selected <span class="italic">Work</span></h2>
+      <a href="#" class=" mt-4 text-sm flex items-center space-x-2">
+        <span>SEE ALL</span>
+        <svg class="w-4 h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="group flex flex-col justify-between w-full h-full bg-black rounded-lg overflow-hidden shadow-lg">
+        <img src="https://picsum.photos/600/400?random=1" alt="Project 1" class="w-full h-auto rounded-lg group-hover:opacity-90 transition duration-300">
+        <div class="flex justify-between items-center bg-yellow-800 bg-opacity-50 text-yellow-500 p-4 group-hover:bg-yellow-600 transition duration-300">
+          <h3 class="font-semibold">Space</h3>
+          <span class="text-sm">WEBDESIGN</span>
+        </div>
+        <div class="flex justify-center items-center py-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <a href="#" class="text-yellow-500 hover:text-yellow-400">
+            <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+            </svg>
+          </a>
+        </div>
       </div>
 
-      <div class="bg-beige p-8 text-center">
-        <h3 class="text-3xl font-bold mb-4">02</h3>
-        <h2 class="text-xl font-semibold mb-4">DEVELOPMENT</h2>
-        <p class="mb-4">
-          Get custom web development solutions tailored to your specifications, designed to deliver a flawless user experience.
-        </p>
-        <a href="#" class="text-black font-bold">ABOUT WEBFLOW →</a>
+      <div class="group flex flex-col justify-between w-full h-full bg-black rounded-lg overflow-hidden shadow-lg">
+        <img src="https://picsum.photos/600/400?random=2" alt="Project 2" class="w-full h-auto rounded-lg group-hover:opacity-90 transition duration-300">
+        <div class="flex justify-between items-center bg-yellow-800 bg-opacity-50 text-yellow-500 p-4 group-hover:bg-yellow-600 transition duration-300">
+          <h3 class="font-semibold">Nova</h3>
+          <span class="text-sm">WEBDESIGN</span>
+        </div>
+        <div class="flex justify-center items-center py-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <a href="#" class="text-yellow-500 hover:text-yellow-400">
+            <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+            </svg>
+          </a>
+        </div>
       </div>
 
-      <div class="bg-beige p-8 text-center">
-        <h3 class="text-3xl font-bold mb-4">03</h3>
-        <h2 class="text-xl font-semibold mb-4">CONTENT & SEO</h2>
-        <p class="mb-4">
-          Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.
-        </p>
-        <a href="#" class="text-black font-bold">ABOUT SEO →</a>
+      <div class="group flex flex-col justify-between w-full h-full bg-black rounded-lg overflow-hidden shadow-lg">
+        <img src="https://picsum.photos/600/400?random=3" alt="Project 3" class="w-full h-auto rounded-lg group-hover:opacity-90 transition duration-300">
+        <div class="flex justify-between items-center bg-yellow-800 bg-opacity-50 text-yellow-500 p-4 group-hover:bg-yellow-600 transition duration-300">
+          <h3 class="font-semibold">Sonic</h3>
+          <span class="text-sm">WEBDESIGN</span>
+        </div>
+        <div class="flex justify-center items-center py-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <a href="#" class="text-yellow-500 hover:text-yellow-400">
+            <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+            </svg>
+          </a>
+        </div>
       </div>
+
+      <div class="group flex flex-col justify-between w-full h-full bg-black rounded-lg overflow-hidden shadow-lg">
+        <img src="https://picsum.photos/600/400?random=4" alt="Project 4" class="w-full h-auto rounded-lg group-hover:opacity-90 transition duration-300">
+        <div class="flex justify-between items-center bg-yellow-800 bg-opacity-50 text-yellow-500 p-4 group-hover:bg-yellow-600 transition duration-300">
+          <h3 class="font-semibold">Solar</h3>
+          <span class="text-sm">WEBDESIGN</span>
+        </div>
+        <div class="flex justify-center items-center py-4 opacity-0 group-hover:opacity-100 transition duration-300">
+          <a href="#" class="text-yellow-500 hover:text-yellow-400">
+            <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="min-h-screen flex flex-col items-center justify-center bg-black text-yellow-500 py-16 px-4">
+    <div class="text-center mb-4">
+      <p class="uppercase tracking-wide text-xs text-yellow-600">The Process</p>
+    </div>
+
+    <div class="text-center">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold">Your Website</h1>
+      <h2 class="italic text-4xl md:text-5xl lg:text-6xl font-light mt-2">in 5 steps</h2>
+      <p class="mt-4 text-sm md:text-base lg:text-lg max-w-md mx-auto">
+        Our process ensures that we create a website tailored to your business needs.
+      </p>
+    </div>
+
+    <div class="mt-16">
+      <button class="flex items-center justify-center w-10 h-10 bg-yellow-600 rounded-full">
+        <svg class="w-6 h-6 text-yellow-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 2L11.2929 2.70711 19.5858 11H3v2h16.5858l-8.2929 8.2929L12 22l10-10-10-10z"/>
+        </svg>
+      </button>
     </div>
   </section>
 </template>
