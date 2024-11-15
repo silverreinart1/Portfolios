@@ -1,41 +1,29 @@
 <template>
-  <section>
-    <div class="bg-black min-h-screen flex flex-col">
-      <nav class="flex justify-center items-center px-4 py-2">
-        <h1 class="text-white font-bold text-xl mr-4">Silver</h1>
+<section>
+  <div class="bg-black min-h-screen flex flex-col">
+    <nav class="flex justify-center items-center px-4 py-2">
+    </nav>
 
-        <div class="flex space-x-6">
-          <a href="#" class="text-white hover:text-gray-400">Services</a>
-          <a href="#" class="text-white hover:text-gray-400">Work</a>
-          <a href="#" class="text-white hover:text-gray-400">About</a>
-          <a href="#" class="text-white hover:text-gray-400">Blog</a>
-          <a href="#" class="text-white hover:text-gray-400">Pages</a>
-        </div>
-
-        <button class="bg-orange-100 text-black px-4 py-2 rounded-md border-2 ml-4">
-          Let's Talk
-        </button>
-      </nav>
-
-      <div class="flex flex-col items-center justify-center flex-grow text-center bg-cover bg-center"
-        style="background-image: url('/img/mina.jpg'); opacity: 0.85;">
-        <div class="z-10">
-          <h2 class="text-orange-100 text-6xl font-bold">Web Designer</h2>
-          <h3 class="text-orange-100 text-5xl mt-4 italic">& Developer</h3>
-          <p class="text-opacity-30	text-gray-200 text-lg mt-6 max-w-xl">
-            Providing web design, development, and SEO services to help your business stand out.
-          </p>
-        </div>
+    <div class="flex flex-col items-center justify-center flex-grow text-center bg-cover grayscale"
+      style="background-image: url('/img/mina2.jpg'); background-position: center top 30%; opacity: 0.85;">
+      <div class="z-10">
+        <h2 class="text-orange-100 text-6xl font-bold">Web Designer</h2>
+        <h3 class="text-orange-100 text-5xl mt-4 italic">& Developer</h3>
+        <p class="text-opacity-30 text-gray-200 text-lg mt-6 max-w-xl">
+          Providing web design, development, and SEO services to help your business stand out.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <section class="bg-black py-20 px-4">
     <div class="max-w-6xl mx-auto text-center mb-10">
     </div>
 
     <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <!-- Service Card 1 -->
       <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300">
         <p class="text-lg font-semibold mb-2 text-gray-400">01</p>
         <h3 class="text-2xl font-bold mb-4 text-gray-100">Web Design</h3>
@@ -52,7 +40,6 @@
         </a>
       </div>
 
-      <!-- Service Card 2 -->
       <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300">
         <p class="text-lg font-semibold mb-2 text-gray-400">02</p>
         <h3 class="text-2xl font-bold mb-4 text-gray-100">Development</h3>
@@ -69,7 +56,6 @@
         </a>
       </div>
 
-      <!-- Service Card 3 -->
       <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300">
         <p class="text-lg font-semibold mb-2 text-gray-400">03</p>
         <h3 class="text-2xl font-bold mb-4 text-gray-100">Content & SEO</h3>
@@ -96,7 +82,6 @@
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Project 1 -->
         <a href="https://github.com/mariakallaste/Grupp-H" class="group block relative">
           <img src="/img/logo.png" alt="Space Project"
             class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
@@ -107,7 +92,6 @@
           </div>
         </a>
 
-        <!-- Project 2 -->
         <a href="https://github.com/markheinmets/AI-projekt" class="group block relative">
           <img src="/img/logo1.png" alt="Nova Project"
             class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
@@ -118,7 +102,6 @@
           </div>
         </a>
 
-        <!-- Project 3 -->
         <a href="https://github.com/1kert/school-project" class="group block relative">
           <img src="/img/logo2.png" alt="Sonic Project"
             class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
@@ -129,7 +112,6 @@
           </div>
         </a>
 
-        <!-- Project 4 -->
 
       </div>
 
@@ -204,7 +186,6 @@
       </h2>
 
       <div class="relative border-l-2 border-gray-700 pl-8 space-y-12">
-        <!-- Step 1 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           <div class="bg-[#1a1a1a] p-6 shadow-md text-gray-200 space-y-4">
             <p class="text-sm text-gray-500">DO WE MATCH?</p>
@@ -225,7 +206,6 @@
           </div>
         </div>
 
-        <!-- Step 2 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           <div class="hidden md:block relative">
             <div
@@ -246,7 +226,6 @@
           </div>
         </div>
 
-        <!-- Step 3 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           <div class="bg-[#1a1a1a] p-6 shadow-md text-gray-200 space-y-4">
             <p class="text-sm text-gray-500">SOME MAGIC</p>
@@ -266,7 +245,6 @@
           </div>
         </div>
 
-        <!-- Step 4 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           <div class="hidden md:block relative">
             <div
@@ -287,7 +265,6 @@
           </div>
         </div>
 
-        <!-- Step 5 -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
           <div class="bg-[#1a1a1a] p-6 shadow-md text-gray-200 space-y-4">
             <p class="text-sm text-gray-500">READY TO GO</p>
@@ -357,36 +334,25 @@
     <p class="text-lg text-[#DAC5A7] mb-8">Feel free to reach out if you have any questions or want to work together on a project!</p>
 
     <form action="https://formspree.io/f/{your_form_id}" method="POST" class="space-y-6">
-      <!-- Name Field -->
       <div>
         <input type="text" name="name" placeholder="Your Name" required
                class="w-full px-4 py-3 rounded-md bg-[#1a1a1a] text-[#DAC5A7] border border-gray-700 focus:outline-none focus:border-gray-500">
       </div>
       
-      <!-- Email Field -->
       <div>
         <input type="email" name="email" placeholder="Your Email" required
                class="w-full px-4 py-3 rounded-md bg-[#1a1a1a] text-[#DAC5A7] border border-gray-700 focus:outline-none focus:border-gray-500">
       </div>
       
-      <!-- Message Field -->
       <div>
         <textarea name="message" rows="5" placeholder="Your Message" required
                   class="w-full px-4 py-3 rounded-md bg-[#1a1a1a] text-[#DAC5A7] border border-gray-700 focus:outline-none focus:border-gray-500"></textarea>
       </div>
 
-      <!-- Submit Button -->
       <button type="submit" class="bg-[#DAC5A7] text-black px-6 py-3 rounded-md font-semibold hover:bg-[#e0b28e] transition duration-300">
         Send Message
       </button>
     </form>
   </div>
 </section>
-
-
-
-
-
-
-
 </template>

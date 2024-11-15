@@ -1,7 +1,18 @@
 <script setup>
 import HelloWorld from './components/Portfolio.vue'
+import About from './components/About.vue';
+import NavBar from './components/NavBar.vue';
 </script>
 
+<!-- src/App.vue -->
 <template>
-  <HelloWorld msg="Portfolio" />
+  <NavBar>
+    
+  </NavBar>
 </template>
+
+<script>
+export default {
+  name: 'App',
+};
+</script>
