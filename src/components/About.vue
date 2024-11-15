@@ -31,7 +31,7 @@
     </p>
 
     <div class="mb-8 mt-6">
-      <img src="/img/mina2.jpg" alt="Profile Picture" class="w-full h-96 object-cover grayscale" />
+      <img src="/img/mina2.jpg" alt="Profile Picture" class="w-full h-80 object-cover grayscale" />
     </div>
 
     <div class="grid grid-cols-3 gap-4 mb-8">
