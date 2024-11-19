@@ -112,6 +112,15 @@
           </div>
         </a>
 
+        <a href="https://github.com/JakobVapper/Metallica-Website" class="group block relative">
+          <img src="/img/logo1.png" alt="Nova Project"
+            class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
+          <div
+            class="flex justify-between items-center bg-gray-900 bg-opacity-80 text-white text-sm p-4 absolute bottom-0 w-full">
+            <span>Metallica-Website</span>
+            <span class="text-gray-400">Webdesign</span>
+          </div>
+        </a>
 
       </div>
 
