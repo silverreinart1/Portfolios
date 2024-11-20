@@ -148,35 +148,35 @@
 
 
       <div class="justify-center flex felx-col">
-        <img class="mt-12" src="./img/Badge.svg" alt="">
-        <img class="" src="./img/Line.svg" alt="">
+        <img class="mt-12" src="" alt="">
+        <img class="" src="" alt="">
       </div>
       <div class="justify-center flex felx-col">
-        <img class="col-start-" src="./img/Grid.svg" alt="">
+        <img class="col-start-" src="" alt="">
         <div class="">
 
         </div>
       </div>
       <div class="justify-center flex felx-col">
-        <img class="col-start-" src="./img/Grid (1).svg" alt="">
+        <img class="col-start-" src="" alt="">
         <div class="">
 
         </div>
       </div>
       <div class="justify-center flex felx-col">
-        <img class="col-start-" src="./img/Grid (2).svg" alt="">
+        <img class="col-start-" src="" alt="">
         <div class="">
 
         </div>
       </div>
       <div class="justify-center flex felx-col">
-        <img class="col-start-" src="./img/Grid (3).svg" alt="">
+        <img class="col-start-" src="" alt="">
         <div class="">
 
         </div>
       </div>
       <div class="justify-center flex felx-col">
-        <img class="col-start-" src="./img/Grid (4).svg" alt="">
+        <img class="col-start-" src="" alt="">
         <div class="">
 
         </div>
