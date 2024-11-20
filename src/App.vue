@@ -2,6 +2,7 @@
 import HelloWorld from './components/Portfolio.vue'
 import About from './components/About.vue';
 import NavBar from './components/NavBar.vue';
+
 </script>
 
 <!-- src/App.vue -->

@@ -313,9 +313,9 @@
           A website that leaves <span class="italic">a lasting impression!</span>
         </h3>
         <p class="text-sm text-gray-400 leading-relaxed">
-          Hi, I'm Silver Reinart — a freelancer specializing in premium web design, development, and SEO services.
-          I'm passionate about creating unique and effective solutions for my clients, and I bring a personal touch
-          to every project. Let's work together to bring your vision to life!
+          Hi, I'm Silver Reinart — m currently studying IT at Kuressaare Ametikool, where I am expanding my knowledge and skills in web development, design, 
+        and other cutting-edge technologies. My education gives me the foundation to deliver modern and effective solutions tailored 
+        to the needs of today's digital world.
         </p>
       </div>
     </div>
@@ -339,29 +339,12 @@
 
   <section class="bg-black py-20 px-4">
   <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-light text-[#DAC5A7] mb-8">Get in <span class="italic font-semibold">Touch</span></h2>
-    <p class="text-lg text-[#DAC5A7] mb-8">Feel free to reach out if you have any questions or want to work together on a project!</p>
+    
 
-    <form action="https://formspree.io/f/{your_form_id}" method="POST" class="space-y-6">
-      <div>
-        <input type="text" name="name" placeholder="Your Name" required
-               class="w-full px-4 py-3 rounded-md bg-[#1a1a1a] text-[#DAC5A7] border border-gray-700 focus:outline-none focus:border-gray-500">
-      </div>
-      
-      <div>
-        <input type="email" name="email" placeholder="Your Email" required
-               class="w-full px-4 py-3 rounded-md bg-[#1a1a1a] text-[#DAC5A7] border border-gray-700 focus:outline-none focus:border-gray-500">
-      </div>
-      
-      <div>
-        <textarea name="message" rows="5" placeholder="Your Message" required
-                  class="w-full px-4 py-3 rounded-md bg-[#1a1a1a] text-[#DAC5A7] border border-gray-700 focus:outline-none focus:border-gray-500"></textarea>
-      </div>
+    <router-link to="/talk" class="ml-auto bg-[#d4bea4] text-black font-semibold text-xs uppercase px-4 py-2 rounded-md border-2 border-transparent transition duration-300 hover:bg-transparent hover:border-[#d4bea4] hover:text-[#d4bea4]">Let's talk about</router-link>
 
-      <button type="submit" class="bg-[#DAC5A7] text-black px-6 py-3 rounded-md font-semibold hover:bg-[#e0b28e] transition duration-300">
-        Send Message
-      </button>
-    </form>
   </div>
 </section>
 </template>
+
+

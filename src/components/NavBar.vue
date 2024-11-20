@@ -7,8 +7,6 @@
         <router-link to="/services" class="hover:text-gray-400 transition duration-300">Services</router-link>
         <router-link to="/page" class="hover:text-gray-400 transition duration-300">Work</router-link>
         <router-link to="/about" class="hover:text-gray-400 transition duration-300">About</router-link>
-        <router-link to="/blog" class="hover:text-gray-400 transition duration-300">Blog</router-link>
-        <router-link to="/work" class="hover:text-gray-400 transition duration-300">Pages</router-link>
       </div>
 
 
