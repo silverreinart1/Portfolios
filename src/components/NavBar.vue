@@ -4,7 +4,7 @@
       <router-link to="portfolio" class="text-[#d4bea4] font-bold text-lg tracking-widest mr-8 uppercase">SILVER</router-link>
 
       <div class="flex space-x-8 text-[#d4bea4] text-sm font-light uppercase">
-        <router-link to="/services" class="hover:text-gray-400 transition duration-300">Services</router-link>
+        <router-link to="/services" class="hover:text-gray-400 transition duration-300">Silver(Me)</router-link>
         <router-link to="/page" class="hover:text-gray-400 transition duration-300">Work</router-link>
         <router-link to="/about" class="hover:text-gray-400 transition duration-300">About</router-link>
       </div>
