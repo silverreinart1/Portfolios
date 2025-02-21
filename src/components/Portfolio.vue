@@ -1,150 +1,122 @@
 <template>
 <section>
-  <div class="bg-black min-h-screen flex flex-col">
-    <nav class="flex justify-center items-center px-4 py-2">
-    </nav>
+    <div class="bg-black min-h-screen flex flex-col">
+      <nav class="flex justify-center items-center px-4 py-2"></nav>
 
-    <div class="flex flex-col items-center justify-center flex-grow text-center bg-cover grayscale"
-      style="background-image: url('/img/mina2.jpg'); background-position: center top 30%; opacity: 0.85;">
-      <div class="z-10">
-        <h2 class="text-orange-100 text-6xl font-bold">Web Designer</h2>
-        <h3 class="text-orange-100 text-5xl mt-4 italic">& Developer</h3>
-        <p class="text-opacity-30 text-gray-200 text-lg mt-6 max-w-xl">
-          Providing web design, development, and SEO services to help your business stand out.
-        </p>
+      <!-- Hero Section -->
+      <div
+        class="flex flex-col items-center justify-center flex-grow text-center bg-cover grayscale relative overflow-hidden animate-fade-in"
+        :style="{ backgroundImage: `url('/img/mina2.jpg')`, backgroundPosition: 'center top 30%' }"
+      >
+        <!-- Background Zoom Effect -->
+        <div class="absolute inset-0 bg-cover bg-center scale-110 animate-zoom-slow"></div>
+
+        <div class="z-10">
+          <h2 class="text-orange-100 text-6xl font-bold animate-spin-every-10s">
+            Web Designer
+          </h2>
+          <h3 class="text-orange-100 text-5xl mt-4 italic animate-slide-up">
+            & Developer
+          </h3>
+          <p class="text-opacity-30 text-gray-200 text-lg mt-6 max-w-xl animate-slide-up">
+            Providing web design, development, and SEO services to help your business stand out.
+          </p>
+        </div>
       </div>
+    </div>
+  </section>
+
+
+
+  <section class="bg-black py-20 px-4">
+  <div class="max-w-6xl mx-auto text-center mb-10"></div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300 animate-bounce-in">
+      <p class="text-lg font-semibold mb-2 text-gray-400">01</p>
+      <h3 class="text-2xl font-bold mb-4 text-gray-100">Web Design</h3>
+      <p class="text-sm mb-6 text-gray-400">
+        Visually stunning web designs that captivate your audience by blending your brand voice and customer needs.
+      </p>
+      <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white">
+        <span class="bg-gray-700 text-white rounded-full p-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </span>
+        ABOUT WEBDESIGN
+      </a>
+    </div>
+
+    <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300 animate-bounce-in">
+      <p class="text-lg font-semibold mb-2 text-gray-400">02</p>
+      <h3 class="text-2xl font-bold mb-4 text-gray-100">Development</h3>
+      <p class="text-sm mb-6 text-gray-400">
+        Custom web development solutions tailored to your specifications, designed to deliver a flawless user experience.
+      </p>
+      <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white">
+        <span class="bg-gray-700 text-white rounded-full p-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </span>
+        ABOUT DEVELOPMENT
+      </a>
+    </div>
+
+    <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300 animate-bounce-in">
+      <p class="text-lg font-semibold mb-2 text-gray-400">03</p>
+      <h3 class="text-2xl font-bold mb-4 text-gray-100">Content & SEO</h3>
+      <p class="text-sm mb-6 text-gray-400">
+        Proven SEO strategies that enhance your online performance, bringing you to the forefront of organic search results.
+      </p>
+      <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white">
+        <span class="bg-gray-700 text-white rounded-full p-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </span>
+        ABOUT SEO
+      </a>
     </div>
   </div>
 </section>
 
 
 
-  <section class="bg-black py-20 px-4">
-    <div class="max-w-6xl mx-auto text-center mb-10">
-    </div>
-
-    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300">
-        <p class="text-lg font-semibold mb-2 text-gray-400">01</p>
-        <h3 class="text-2xl font-bold mb-4 text-gray-100">Web Design</h3>
-        <p class="text-sm mb-6 text-gray-400">Visually stunning web designs that captivate your audience by blending
-          your brand voice and customer needs.</p>
-        <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white">
-          <span class="bg-gray-700 text-white rounded-full p-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </span>
-          ABOUT WEBDESIGN
-        </a>
-      </div>
-
-      <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300">
-        <p class="text-lg font-semibold mb-2 text-gray-400">02</p>
-        <h3 class="text-2xl font-bold mb-4 text-gray-100">Development</h3>
-        <p class="text-sm mb-6 text-gray-400">Custom web development solutions tailored to your specifications, designed
-          to deliver a flawless user experience.</p>
-        <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white">
-          <span class="bg-gray-700 text-white rounded-full p-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </span>
-          ABOUT DEVELOPMENT
-        </a>
-      </div>
-
-      <div class="bg-[#1a1a1a] text-gray-200 p-6 shadow-md hover:shadow-lg transition duration-300">
-        <p class="text-lg font-semibold mb-2 text-gray-400">03</p>
-        <h3 class="text-2xl font-bold mb-4 text-gray-100">Content & SEO</h3>
-        <p class="text-sm mb-6 text-gray-400">Proven SEO strategies that enhance your online performance, bringing you
-          to the forefront of organic search results.</p>
-        <a href="#" class="flex items-center gap-2 text-sm font-semibold text-gray-400 hover:text-white">
-          <span class="bg-gray-700 text-white rounded-full p-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </span>
-          ABOUT SEO
-        </a>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="bg-black py-20 px-4">
-    <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-3xl font-light text-gray-300 mb-8">
-        Selected <span class="italic font-semibold">Work</span>
-      </h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <a href="https://github.com/mariakallaste/Grupp-H" class="group block relative">
-          <img src="/img/logo.png" alt="Space Project"
-            class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
-          <div
-            class="flex justify-between items-center bg-gray-900 bg-opacity-80 text-white text-sm p-4 absolute bottom-0 w-full">
-            <span>Disainimajaka tehnikarendi süsteem</span>
-            <span class="text-gray-400">Webdesign</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/markheinmets/AI-projekt" class="group block relative">
-          <img src="/img/logo1.png" alt="Nova Project"
-            class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
-          <div
-            class="flex justify-between items-center bg-gray-900 bg-opacity-80 text-white text-sm p-4 absolute bottom-0 w-full">
-            <span>AI-projekt</span>
-            <span class="text-gray-400">Webdesign</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/1kert/school-project" class="group block relative">
-          <img src="/img/logo2.png" alt="Sonic Project"
-            class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
-          <div
-            class="flex justify-between items-center bg-gray-900 bg-opacity-80 text-white text-sm p-4 absolute bottom-0 w-full">
-            <span>Oppenheimeri leht</span>
-            <span class="text-gray-400">Webdesign</span>
-          </div>
-        </a>
-
-        <a href="https://github.com/JakobVapper/Metallica-Website" class="group block relative">
-          <img src="/img/logo1.png" alt="Nova Project"
-            class="w-full h-auto object-cover transition duration-300 group-hover:opacity-75">
-          <div
-            class="flex justify-between items-center bg-gray-900 bg-opacity-80 text-white text-sm p-4 absolute bottom-0 w-full">
-            <span>Metallica-Website</span>
-            <span class="text-gray-400">Webdesign</span>
-          </div>
-        </a>
-
-      </div>
-
-      <a href="/all-projects" class="text-gray-400 mt-6 inline-block hover:text-white">
-        <span>SEE ALL</span>
-        <svg class="ml-1 w-4 h-4 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-        </svg>
-      </a>
-    </div>
-  </section>
 
 
 
 
+<section class="text-[#DAC5A7] font-satoshi bg-black pt-44">
+  <div class="justify-center items-center grid grid-cols-1">
+    <p class="mb-5 flex flex-col text-center">THE PROCESS</p>
+    <h1 class="text-8xl flex flex-col text-center">
+      <span class="flex justify-center">
+        <span class="animate-spin-letters inline-block">Y</span>
+        <span class="animate-spin-letters inline-block">o</span>
+        <span class="animate-spin-letters inline-block">u</span>
+        <span class="animate-spin-letters inline-block">r</span>
+      </span>
+      <span class="flex justify-center">
+        <span class="animate-spin-letters inline-block">W</span>
+        <span class="animate-spin-letters inline-block">e</span>
+        <span class="animate-spin-letters inline-block">b</span>
+        <span class="animate-spin-letters inline-block">s</span>
+        <span class="animate-spin-letters inline-block">i</span>
+        <span class="animate-spin-letters inline-block">t</span>
+        <span class="animate-spin-letters inline-block">e</span>
+      </span>
+      <span class="italic">in 5 steps</span>
+    </h1>
+    <p class="text-center mt-6 opacity-35">
+      Our process ensures that we create a Website<br> tailored to your business needs
+    </p>
+  </div>
 
-
-  <section class="text-[#DAC5A7] font-satoshi bg-black pt-44">
-    <div class="justify-center items-center grid grid-cols-1">
-      <p class="mb-5 flex flex-col text-center">THE PROCESS</p>
-      <h1 class="text-8xl flex flex-col text-center">Your Website <span class="italic">in 5 steps</span></h1>
-      <p class="text-center mt-6 opacity-35">Our process ensures that we create a Website<br> tailored to your business
-        needs</p>
 
 
       <div class="justify-center flex felx-col">
@@ -181,7 +153,6 @@
 
         </div>
       </div>
-    </div>
 
 
 
@@ -321,9 +292,9 @@
     </div>
   </section>
 
-  <section class="bg-black flex items-center justify-center h-screen">
+  <section class="bg-black flex items-center justify-center h-screen ">
     <div class="text-center px-4">
-      <p class="text-[#DAC5A7] uppercase tracking-wide opacity-75">Project in mind?</p>
+      <p class="text-[#DAC5A7] uppercase tracking-wide opacity-75 ">Project in mind?</p>
       <h1 class="text-4xl md:text-6xl font-light text-[#DAC5A7] my-4 leading-tight">
         Let’s make your <br />
         <span class="italic">Website shine</span>
@@ -331,17 +302,17 @@
       <p class="text-[#DAC5A7] opacity-75 max-w-lg mx-auto mb-8">
         Premium web design, webflow, and SEO services to help your business stand out.
       </p>
-      <button class="mt-4 px-6 py-2 bg-[#DAC5A7] text-black rounded-full shadow hover:shadow-lg transition">
+      <button class="mt-4 px-6 py-2 bg-[#DAC5A7] text-black rounded-full shadow hover:shadow-lg transition animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">
         Get in Touch
       </button>
     </div>
   </section>
 
   <section class="bg-black py-20 px-4">
-  <div class="max-w-4xl mx-auto text-center">
+  <div class="max-w-4xl mx-auto text-center ">
     
 
-    <router-link to="/talk" class="ml-auto bg-[#d4bea4] text-black font-semibold text-xs uppercase px-4 py-2 rounded-md border-2 border-transparent transition duration-300 hover:bg-transparent hover:border-[#d4bea4] hover:text-[#d4bea4]">Let's talk about</router-link>
+    <router-link to="/talk" class="ml-auto bg-[#d4bea4] text-black font-semibold text-xs uppercase px-4 py-2 rounded-md border-2 border-transparent transition duration-300 hover:bg-transparent hover:border-[#d4bea4] hover:text-[#d4bea4]  ">Let's talk about</router-link>
 
   </div>
 </section>

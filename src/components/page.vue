@@ -1,11 +1,11 @@
 <template>
   <div class="min-h-screen bg-black p-6">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-4xl font-bold mb-6 flex justify-center" style="color: #DAC5A7;">My work</h2>
+      <h2 class="text-4xl font-bold mb-6 flex justify-center " style="color: #DAC5A7;">My work</h2>
       <h2 class="flex justify-center text-[#DAC5A7] text-2xl">Here is my work</h2>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
-        <div class="project-box">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 ">
+        <div class="project-box animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">
           <h3 class="text-lg font-semibold mb-2 text-center" style="color: #DAC5A7;">
             Disainimajaka tehnikarendi süsteem
           </h3>
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="project-box">
+        <div class="project-box animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">
           <h3 class="text-lg font-semibold mb-2 text-center" style="color: #DAC5A7;">
             AI-projekt
           </h3>
@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="project-box">
+        <div class="project-box animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">
           <h3 class="text-lg font-semibold mb-2 text-center" style="color: #DAC5A7;">
             Oppenheimeri leht
           </h3>
@@ -56,7 +56,7 @@
           </div>
         </div>
 
-        <div class="project-box">
+        <div class="project-box animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">
           <h3 class="text-lg font-semibold mb-2 text-center" style="color: #DAC5A7;">
             Metallica-Website
           </h3>

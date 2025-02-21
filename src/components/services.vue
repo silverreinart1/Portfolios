@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-gradient-to-b from-gray-900 to-black text-[#d4bea4] flex flex-col items-center justify-center p-6">
     <div class="text-center mb-10">
-      <h1 class="text-5xl font-extrabold tracking-wide mb-4 text-[#ffcc00]">Our Services</h1>
+      <h1 class="text-5xl font-extrabold tracking-wide mb-4 text-[#ffcc00] animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">Mis ma teinud olen</h1>
       <div class="w-16 h-1 bg-[#ffcc00] mx-auto"></div>
     </div>
     

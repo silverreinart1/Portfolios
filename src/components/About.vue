@@ -2,8 +2,8 @@
   <section class="bg-black text-[#d4bea4] min-h-screen flex items-center justify-center">
     <div class="text-center p-10">
       <header>
-        <h1 class="text-[96px] leading-none font-light">Silver</h1>
-        <h1 class="text-[96px] italic leading-none font-light">Reinart</h1>
+        <h1 class="text-[96px] leading-none font-light transition animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">Silver</h1>
+        <h1 class="text-[96px] italic leading-none font-light animate-bounce-constant">Reinart</h1>
         <p class="text-lg mt-6 max-w-lg mx-auto">
           Delivering Premium Web Design and Development Services to Boost Your Online Presence.
         </p>

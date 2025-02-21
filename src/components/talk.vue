@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-black flex items-center justify-center p-6">
+  <div class="min-h-screen bg-black flex items-center justify-center p-6 animate-spin animate-infinite animate-ease-in-out animate-alternate animate-fill-both">
     <!-- Contact Form -->
     <form
       action="https://formspree.io/f/xovqllnb"
