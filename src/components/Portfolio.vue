@@ -316,5 +316,98 @@
 
   </div>
 </section>
+<section>
+  <div class="min-h-screen flex items-center justify-center bg-black">
+    <div class="relative font-mono font-extrabold text-9xl grid grid-cols-2 text-right text-white 
+                shadow-2xl gap-x-px border-8 border-yellow-400 rounded-lg clock-container">
+      
+      <!-- Clock Stand -->
+      <div class="absolute inset-x-0 -bottom-5 mx-auto flex justify-center">
+        <div class="w-3/4 h-5 bg-yellow-400 rounded shadow-lg"></div>
+      </div>
 
+      <!-- Left Timer (Hours) -->
+      <div class="relative py-8 px-5 flip-card">
+        <div class="flip-bg"></div>
+        <div class="relative flip-text">{{ formattedHours }}</div>
+      </div>
+
+      <!-- Right Timer (Minutes) -->
+      <div class="relative py-8 px-5 flip-card">
+        <div class="flip-bg"></div>
+        <div class="relative flip-text">{{ formattedMinutes }}</div>
+      </div>
+    </div>
+  </div>
+</section>
 </template>
+
+<script>
+export default {
+  name: "FlipClock",
+  data() {
+    return {
+      hours: new Date().getHours(),
+      minutes: new Date().getMinutes(),
+    };
+  },
+  computed: {
+    formattedHours() {
+      return String(this.hours).padStart(2, "0");
+    },
+    formattedMinutes() {
+      return String(this.minutes).padStart(2, "0");
+    }
+  },
+  methods: {
+    updateTime() {
+      const now = new Date();
+      this.hours = now.getHours();
+      this.minutes = now.getMinutes();
+    }
+  },
+  mounted() {
+    setInterval(this.updateTime, 1000); // Updates every second
+  }
+};
+</script>
+
+<style scoped>
+.clock-container {
+  transform: perspective(1000px) rotateX(10deg);
+  box-shadow: 0px 10px 50px rgba(255, 255, 0, 0.3);
+}
+
+.flip-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  text-align: center;
+  perspective: 1000px;
+  transform: translateZ(20px);
+}
+
+.flip-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, #222, #000);
+  border-radius: 10px;
+  box-shadow: inset 0px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.flip-text {
+  animation: flip 1s ease-in-out;
+  text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8);
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+</style>
