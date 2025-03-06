@@ -1,8 +1,6 @@
 <template>
   <div class="min-h-screen bg-black flex items-center justify-center p-6 relative overflow-hidden">
-    <!-- Full 1920x1080 Container -->
     <div class="relative w-[1920px] h-[1080px] bg-black border-2 border-[#DAC5A7]">
-      <!-- Contact Form -->
       <form
         action="https://formspree.io/f/xovqllnb"
         method="POST"
@@ -10,7 +8,6 @@
       >
         <h1 class="text-[#DAC5A7] text-3xl font-bold text-center">Contact Us</h1>
 
-        <!-- Email Field -->
         <label class="block text-[#DAC5A7] text-sm">
           Your Email:
           <input
@@ -22,7 +19,6 @@
           />
         </label>
 
-        <!-- Name Field -->
         <label class="block text-[#DAC5A7] text-sm">
           Your Name:
           <input
@@ -34,7 +30,6 @@
           />
         </label>
 
-        <!-- Message Field -->
         <label class="block text-[#DAC5A7] text-sm">
           Your Message:
           <textarea
@@ -46,9 +41,7 @@
           ></textarea>
         </label>
 
-        <!-- Button Frame (1920x1080 Fixed Size) -->
         <div class="absolute inset-0 flex justify-center items-center">
-          <!-- Submit Button -->
           <button
             type="submit"
             class="w-full bg-[#DAC5A7] text-black rounded px-4 py-2 uppercase font-semibold hover:bg-opacity-90 transition absolute"
@@ -66,6 +59,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      resetTimer: null, // Timer for resetting the button position
+    };
+  },
   methods: {
     moveButton(event) {
       const button = event.target;
@@ -81,6 +79,10 @@ export default {
 
       button.style.transition = 'transform 0.3s ease-in-out';
       button.style.transform = `translate(${moveX}px, ${moveY}px)`; // Move button within the 1920x1080 area
+
+      // Clear the reset timer since the button has been moved
+      clearTimeout(this.resetTimer);
+      this.startResetTimer(button); // Start the reset timer
     },
     moveButtonOnClick(event) {
       const button = event.target;
@@ -90,58 +92,85 @@ export default {
       const maxX = container.offsetWidth - button.offsetWidth - 20;
       const maxY = container.offsetHeight - button.offsetHeight - 20;
 
-      // Allow button to move randomly within this container's 1920x1080 area
+      // Allow button to move randomly within this container's 1920 x 1080 area on click
       const moveX = Math.random() * maxX;
       const moveY = Math.random() * maxY;
-
+      
       button.style.transition = 'transform 0.3s ease-in-out';
-      button.style.transform = `translate(${moveX}px, ${moveY}px)`; // Move button within the 1920x1080 area
+      button.style.transform = `translate(${moveX}px, ${moveY}px)`;
+
+      clearTimeout(this.resetTimer);
+      this.startResetTimer(button);
     },
+
     resetButton(event) {
       const button = event.target;
       button.style.transition = 'transform 0.3s ease-in-out';
-      button.style.transform = 'translate(0, 0)';
+      button.style.transform = 'translate(0, 0)'; // Reset button position to the top-left corner
+    },
+
+    startResetTimer(button) {
+      this.resetTimer = setTimeout(() => {
+        button.style.transition = 'transform 0.3s ease-in-out';
+        button.style.transform = 'translate(0, 0)'; // Reset button position to the top-left corner
+      }, 3000); // Reset button position after 3 seconds
     },
   },
 };
 </script>
 
-<style scoped>
-/* Prevent scrolling and overflow */
-html, body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-}
-
-.min-h-screen {
-  height: 100vh; /* Ensure it fills the whole screen height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; /* Prevent scrolling */
-}
-
-form {
-  width: 100%;
-  max-width: 400px; /* Adjust the form width */
-  position: relative; /* Make sure the button is positioned relative to the form */
-}
-
-.button-frame {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+<style>
 button {
-  position: absolute; /* Keeps button inside the frame */
-  bottom: 10px; /* Default position inside the frame */
-  left: 50%;
-  transform: translateX(-50%); /* Center the button horizontally by default */
+  cursor: pointer;
 }
+
+button:hover {
+  background-color: #c2a45f;
+}
+
+button:active {
+  background-color: #a88b4d;
+}
+
+button.absolute {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+button.hover {
+  background-color: #c2a45f;
+}
+
+button.uppercase {
+  text-transform: uppercase;
+}
+
+button.font-semibold {
+  font-weight: 600;
+}
+
+button.rounded {
+  border-radius: 0.375rem;
+}
+
+button.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+button.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+button.w-full {
+  width: 100%;
+}
+
 
 </style>
